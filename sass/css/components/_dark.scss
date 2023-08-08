@@ -1,0 +1,25 @@
+$dark: true;
+
+@if $dark {
+    .perfil {
+        background-color: $color-claro;
+        h2 {color: $color-secundario;}
+        h3 {color: $color-variacion}
+    }
+    .estadistica_elemento,
+    .ubicacion--perfil,
+    .galeria {
+        h3, h2 {
+            color: $color-primario;
+        }
+    }
+    .articulos {
+        background-color: $color-primario;
+    }
+    .articulo{
+        &__titulo,
+        &__descripcion {
+            color: $color-claro;
+        }
+    }
+}
