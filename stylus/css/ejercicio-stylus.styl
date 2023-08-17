@@ -15,6 +15,18 @@ caja-sombra()
 	box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.20)
 opacidad(color, cantidad)
 	alpha(color,cantidad)
+for header in 3 2 1
+	h{header}
+		font-size: 35px - (5*header)
+		margin: 0
+
+titulos(fuente)
+	if fuente == Fuente1
+		font-family: Fuente1
+	else 
+		font-family: Fuente2
+		font-weight: 600
+		text-transform: uppercase
 * 
 	box-sizing: border-box
 
@@ -42,7 +54,7 @@ body
 	h2 
 		margin-top: 10px
 		text-transform: uppercase
-		font-weight: 500
+		font-weight: 600
 		font-size: 50px
 		font-family: Fuente2
 	.filtros
@@ -61,10 +73,11 @@ body
 .contenido
 	margin-bottom: 40px
 	justify-content: space-evenly
+	flex-wrap: wrap
 	gap: 24px
 	contenedor()
 .caja 
-	max-width: 400px;
+	width: 400px;
 	caja-sombra()
 	&__contenido
 		padding: 20px;
@@ -73,9 +86,10 @@ body
 			text-transform: uppercase
 			color: color-secundario
 			font-family: Fuente2
+			font-weight: 600
 		h3
 			text-transform: uppercase
-			font-weight: normal
+			font-weight: 600
 			font-family: Fuente2
 .estadistica--articulos
 	height: 70px

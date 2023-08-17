@@ -1,3 +1,15 @@
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,7 +46,7 @@ body {
 .encabezado--con-filtros h2 {
   margin-top: 10px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
 }
@@ -61,6 +73,8 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,7 +84,7 @@ body {
   padding: 30px 0;
 }
 .caja {
-  max-width: 400px;
+  width: 400px;
   background-color: #fff;
   -webkit-box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.2);
           box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.2);
@@ -83,10 +97,11 @@ body {
   text-transform: uppercase;
   color: #8841da;
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
 }
 .caja__contenido h3 {
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 600;
   font-family: 'Oswald', sans-serif;
 }
 .estadistica--articulos {
